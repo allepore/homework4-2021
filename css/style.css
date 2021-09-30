@@ -51,7 +51,7 @@ p{
 
 a{
   font-size: 16px;
-  color: #C12258;
+  color: #B21F50;
   text-decoration-style: wavy;
 }
 
@@ -68,6 +68,12 @@ td{
   padding: 10px;
 }
 
+table tr:nth-child(odd) {background-color: rgba(0,0,0,0);}
+table tr:nth-child(even) {background-color: #D1D1D1;}
+
+tbody tr:hover{
+  background-color: rgba(126, 8, 37, .25);
+}
 
 .colhead{
   color: #FFFFFF;
@@ -82,6 +88,7 @@ td{
   border-top: 2px solid black;
   border-right: 2px solid black;
   text-align:center;
+  vertical-align: middle;
 }
 
 
@@ -108,13 +115,6 @@ tbody tr:last-child td:last-child{
   border-radius: 0px 0px 50px 0px;
 }
 
-table tr:nth-child(odd) {background-color: rgba(0,0,0,0);}
-table tr:nth-child(even) {background-color: #D1D1D1;}
-
-tr:hover{
-  background: rgba(255,0,0,.25);
-}
-
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
@@ -125,12 +125,16 @@ You can use Inspect Element or your editor to find selectors. */
 
 
 footer{
-  width:100%;
+  
   background:#000000;
-  text-align:center;
   color: #FFFFFF;
   min-height: 75px;
-  position: absolute;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align:center;
+  align-self: stretch;
+  /* margin-left:-20px; */
   /* bottom: 0; */
 
 }
