@@ -96,7 +96,6 @@ tbody tr:hover{
 table{
     border: 5px solid #000000;
     border-radius: 50px;
-    /* display: grid; */
     margin: 0 auto;
 }
 
@@ -126,16 +125,12 @@ You can use Inspect Element or your editor to find selectors. */
 
 
 footer{
-  
   background:#000000;
   color: #FFFFFF;
   min-height: 75px;
   position: fixed;
+  left:0;
   bottom: 0;
   width: 100%;
   text-align:center;
-  align-self: stretch;
-  /* margin-left:-20px; */
-  /* bottom: 0; */
-
 }
